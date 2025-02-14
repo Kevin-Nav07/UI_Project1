@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | FitPro</title>
+    <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <img src="icon.png" alt="Fitness Logo" class="logo">
+            <h2 class="site-title">FitPro</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-container">
+        <h1>Book Your Session</h1>
+        <div class="booking-grid">
+            <!-- Time Slot Selection -->
+            <div class="timeslot">
+                <h2>Choose your timeslot</h2>
+                <input type="date" id="date" name="date" required>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <!-- Trainer Selection -->
+            <div class="trainer-selection">
+                <h2>Choose your trainer</h2>
+                <button class="trainer-btn" data-trainer="Pronoy">Pronoy - Strength Training</button>
+                <button class="trainer-btn" data-trainer="Fayza">Fayza - Yoga training</button>
+                <button class="trainer-btn" data-trainer="Kevin">Kevin - HITT and Cardio</button>
+            </div>
+        </div>
+
+        <!-- Book Button -->
+        <button id="book-btn">Book</button>
+
+        <!-- Confirmation Message -->
+        <p id="confirmation-message" class="hidden"></p>
+    </section>
+
+    <script src="booking.js"></script>
+
+</body>
+
+</html>

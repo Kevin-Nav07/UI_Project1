@@ -1,0 +1,464 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    /* Dark Gray */
+    padding: 15px 30px;
+}
+
+/* Logo & Title Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image */
+.logo {
+    height: 50px;
+    /* Adjust size as needed */
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Website Title */
+.site-title {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4A90E2;
+    /* Soft Blue on Hover */
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333333;
+    /* Dark Gray */
+    background: #F5F5F5;
+    /* Light Gray */
+    overflow: hidden;
+}
+
+/* Video Background */
+#background-video {
+    position: fixed;
+    /* Keeps video in place */
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    /* Centers the video */
+    object-fit: cover;
+    z-index: -1;
+    /* Ensures video is in the background */
+    background: black;
+    /* Fallback color */
+}
+
+/* Overlay Content (Title & Motto) */
+.overlay {
+    position: absolute;
+    /* Allows precise placement */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Centers text */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+    /* Semi-transparent background */
+    padding: 20px 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    /* Adds slight blur for readability */
+    z-index: 1;
+    /* Makes sure it's above the video */
+}
+
+/* Title & Motto */
+.overlay h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333333;
+    /* Dark Gray for readability */
+}
+
+.overlay p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4A90E2;
+    /* Soft Blue for contrast */
+}
+
+
+/* Hover Interaction */
+.overlay:hover {
+    background: rgba(255, 255, 255, 0.95);
+    /* Brighter white on hover */
+}
+
+/* Booking Page Container */
+.booking-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent White */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    /* Dark shadow to stand out */
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    /* Adds a frosted glass effect */
+}
+
+/* Title */
+.booking-container h1 {
+    color: white;
+    /* Ensures readability */
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Timeslot & Trainer Selection */
+.booking-grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+body {
+
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/* Overlay to Darken the Background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Black overlay with 50% transparency */
+    z-index: -1;
+    /* Keeps it behind the content */
+}
+
+/* Booking Page Container */
+.booking-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    /* Transparent White */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    /* Dark shadow to stand out */
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    /* Frosted Glass Effect */
+    position: relative;
+    /* Ensures it appears above the overlay */
+    z-index: 1;
+    /* Brings the form above the overlay */
+}
+
+/* Title */
+.booking-container h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* Timeslot & Trainer Selection Boxes */
+.timeslot,
+.trainer-selection {
+    width: 45%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Transparent Dark Gray */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+    /* Text contrast */
+}
+
+/* Input Fields */
+.timeslot input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+    /* Light transparency */
+    color: black;
+}
+
+/* Trainer Buttons */
+.trainer-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(74, 144, 226, 0.8);
+    /* Semi-transparent Soft Blue */
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.trainer-btn:hover {
+    background-color: rgba(53, 122, 189, 0.9);
+}
+
+/* Book Button */
+#book-btn {
+    margin-top: 20px;
+    background-color: rgba(74, 144, 226, 0.9);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#book-btn:hover {
+    background-color: rgba(53, 122, 189, 1);
+}
+
+/* Confirmation Message */
+.hidden {
+    display: none;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #32CD32;
+    /* Green Success Message */
+}
+
+
+
+/* About Us Section */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* Ensures both sections stretch evenly */
+    background: white;
+    /* Clean white background */
+    padding: 0;
+    height: 400px;
+    /* Adjust the height as needed */
+}
+
+/* About Us Text */
+.about-text {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: left;
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333333;
+    /* Dark Gray */
+}
+
+
+.about-image {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 0;
+
+}
+
+/* Company Description Section */
+.description-container {
+    background: #333333;
+
+    padding: 40px;
+    text-align: center;
+    font-size: 1.2em;
+    color: white;
+
+    font-weight: 500;
+}
+
+/* Footer Section */
+.footer {
+    background: #333333;
+
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: auto;
+
+    width: 100%;
+    position: relative;
+
+}
+
+/* Footer Content */
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Footer Title */
+.footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #F5F5F5;
+
+}
+
+/* Social Media Links */
+.social-links {
+    margin: 10px 0;
+}
+
+.social-links a {
+    color: #4A90E2;
+
+    text-decoration: none;
+    font-size: 1.2em;
+    margin: 0 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #D3D3D3;
+
+}
+
+/* Contact Info */
+.contact-details {
+    font-size: 1em;
+    margin-top: 10px;
+    color: #F5F5F5;
+
+}
+
+/* Ensure Footer Sticks to Bottom */
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeslot,
+    .trainer-selection {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .overlay h1 {
+        font-size: 2em;
+    }
+
+    .overlay p {
+        font-size: 1em;
+    }
+}

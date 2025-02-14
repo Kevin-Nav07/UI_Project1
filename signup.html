@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup | FitPro</title>
+    <link rel="stylesheet" href="auth.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="icon.png" alt="FitPro Logo" class="logo">
+            <h2 class="site-title">FitPro</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="auth-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form">
+            <input type="text" id="signup-username" placeholder="Enter username" required>
+            <input type="password" id="signup-password" placeholder="Enter password" required>
+            <input type="number" id="signup-weight" placeholder="Weight (kg)" required>
+            <input type="number" id="signup-height" placeholder="Height (cm)" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script src="auth.js"></script>
+
+</body>
+
+</html>

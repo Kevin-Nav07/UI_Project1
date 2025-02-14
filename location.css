@@ -1,0 +1,424 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+
+    padding: 15px 30px;
+}
+
+/* Logo & Title Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo Image */
+.logo {
+    height: 50px;
+
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Website Title */
+.site-title {
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+
+/* Navbar */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #4A90E2;
+
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333333;
+
+    background: #F5F5F5;
+
+    overflow: hidden;
+}
+
+/* Video Background */
+#background-video {
+    position: fixed;
+
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+
+    object-fit: cover;
+    z-index: -1;
+
+    background: black;
+
+}
+
+/* Overlay Content (Title & Motto) */
+.overlay {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
+
+    padding: 20px 40px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+
+    z-index: 1;
+
+}
+
+/* Title & Motto */
+.overlay h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333333;
+
+}
+
+.overlay p {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4A90E2;
+
+}
+
+
+/* Hover Interaction */
+.overlay:hover {
+    background: rgba(255, 255, 255, 0.95);
+
+}
+
+/* Booking Page Container */
+.booking-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+
+}
+
+/* Title */
+.booking-container h1 {
+    color: white;
+
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Timeslot & Trainer Selection */
+.booking-grid {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+body {
+    background: url('bookingpic.jpg') no-repeat center center fixed;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/* Overlay to Darken the Background */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+
+    z-index: -1;
+
+}
+
+/* Booking Page Container */
+.booking-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+
+    position: relative;
+
+    z-index: 1;
+
+}
+
+/* Title */
+.booking-container h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+
+/* Timeslot & Trainer Selection Boxes */
+.timeslot,
+.trainer-selection {
+    width: 45%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    color: white;
+
+}
+
+/* Input Fields */
+.timeslot input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.7);
+
+    color: black;
+}
+
+/* Trainer Buttons */
+.trainer-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: rgba(74, 144, 226, 0.8);
+
+    color: white;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.trainer-btn:hover {
+    background-color: rgba(53, 122, 189, 0.9);
+}
+
+/* Book Button */
+#book-btn {
+    margin-top: 20px;
+    background-color: rgba(74, 144, 226, 0.9);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#book-btn:hover {
+    background-color: rgba(53, 122, 189, 1);
+}
+
+/* Confirmation Message */
+.hidden {
+    display: none;
+}
+
+#confirmation-message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #32CD32;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .booking-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timeslot,
+    .trainer-selection {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+    }
+
+    .overlay h1 {
+        font-size: 2em;
+    }
+
+    .overlay p {
+        font-size: 1em;
+    }
+}
+
+/* Locations Page */
+.locations-container {
+    background: #F5F5F5;
+
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.locations-container h1 {
+    font-size: 2.5em;
+    color: #333333;
+
+    margin-bottom: 30px;
+}
+
+/* Locations Grid */
+.locations-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Location Box Styling */
+.location-box {
+    width: 30%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.location-box img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.location-box h2 {
+    font-size: 1.5em;
+    color: #333333;
+    margin-top: 10px;
+}
+
+.location-box p {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Hover Effect */
+.location-box:hover {
+    transform: scale(1.05);
+}
+
+/* Map Section */
+.map-container {
+    background: #D3D3D3;
+    /* Medium Gray */
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.map-container h2 {
+    font-size: 2em;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.map-box {
+    width: 80%;
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .locations-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location-box {
+        width: 90%;
+    }
+}

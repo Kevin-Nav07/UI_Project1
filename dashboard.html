@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | FitPro</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo-container">
+            <img src="icon.png" alt="FitPro Logo" class="logo">
+            <h2 class="site-title">FitPro</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="booking.html">Book</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="location.html">Location</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Dashboard Container -->
+    <div class="dashboard-container">
+        <div class="welcome-banner">
+            <h2>Welcome, <span id="username-display"></span></h2>
+        </div>
+
+        <div class="dashboard-grid">
+            <!-- Body Composition Section -->
+            <div class="dashboard-card">
+                <h3>Body Composition Info</h3>
+                <p>Weight: <span id="user-weight"></span> kg</p>
+                <p>Height: <span id="user-height"></span> cm</p>
+                <p>BMI: <span id="user-bmi"></span></p>
+            </div>
+
+            <!-- Appointments Section -->
+            <div class="dashboard-card">
+                <h3>Appointments Booked</h3>
+                <ul id="appointments-list">
+                    <li>No appointments yet.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
