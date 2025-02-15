@@ -96,7 +96,7 @@ nav ul li a:hover {
 
 }
 
-/* Overlay Content (Title & Motto) */
+/* Overlay Content */
 .overlay {
     position: absolute;
 
@@ -390,7 +390,6 @@ body::before {
 /* Map Section */
 .map-container {
     background: #D3D3D3;
-    /* Medium Gray */
     text-align: center;
     padding: 40px 20px;
 }
